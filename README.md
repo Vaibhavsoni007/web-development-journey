@@ -114,6 +114,7 @@ Examples:
 - E-commerce UI
 - Blog Application
 
+---
 
 ## Goal
 
