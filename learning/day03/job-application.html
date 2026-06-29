@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job Application Form</title>
+    </head>
+    <body>
+        <!-- create a job application form with personal details, education , skills, resume upload, expected salary, availability date, declaration checkbox, submit button -->
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="education">Education:</label>
+            <input type="text" id="education" name="education" required><br><br>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" required><br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume"
+                accept=".pdf,.doc,.docx" required><br><br>
+
+            <label for="salary">Expected Salary:</label>
+            <input type="number" id="salary" name="salary" required><br><br>
+
+            <label for="availability">Availability Date:</label>
+            <input type="date" id="availability" name="availability"
+                required><br><br>
+
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">I hereby declare that the information
+                provided is true and correct.</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

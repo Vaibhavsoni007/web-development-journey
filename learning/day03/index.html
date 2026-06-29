@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>day03</title>
+    </head>
+    <body>
+        <h1>Day 03 - HTML Tables</h1>
+
+        <!-- table structure -->
+        <h1>Table Structure</h1>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+
+            <tr>
+                <td>Prince</td>
+                <td>22</td>
+                <td>Jaipur</td>
+            </tr>
+
+            <tr>
+                <td>Goku</td>
+                <td>30</td>
+                <td>Tokyo</td>
+            </tr>
+        </table>
+
+        <br>
+        <h1>Table with Colspan and Rowspan</h1>
+        <!-- how to use td colspan and rowspan in table -->
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Prince</td>
+                <td>22</td>
+                <td>Jaipur</td>
+            </tr>
+
+            <tr>
+                <td>23</td>
+                <td>Delhi</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Goku</td>
+                <td>Tokyo</td>
+            </tr>
+        </table>
+
+        <br>
+        <h1>Practice Task 01</h1>
+        <!-- practice task -- create a student table with 4 columns and 3 rows and add some data in it.   -->
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Student Name</th>
+                <th>Roll Number</th>
+                <th>Class</th>
+                <th>Section</th>
+            </tr>
+
+            <tr>
+                <td>Alice</td>
+                <td>101</td>
+                <td>10</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Bob</td>
+                <td>102</td>
+                <td>10</td>
+                <td>B</td>
+            </tr>
+
+            <tr>
+                <td>Charlie</td>
+                <td>103</td>
+                <td>10</td>
+                <td>C</td>
+            </tr>
+        </table>
+
+        <br>
+        <h1>Practice Task 02</h1>
+        <!-- create a employee table with atleast one rowspan and one colspan and add some data in it. -->
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Employee Name</th>
+                <th>Employee ID</th>
+                <th>Department</th>
+                <th>Location</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2">John Doe</td>
+                <td>EMP001</td>
+                <td>HR</td>
+                <td>New York</td>
+            </tr>
+
+            <tr>
+                <td>EMP002</td>
+                <td>Finance</td>
+                <td>Chicago</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Jane Smith</td>
+                <td>IT</td>
+                <td>San Francisco</td>
+            </tr>
+        </table>
+
+        <h1>day03 - HTML Forms</h1>
+        <!-- form structure -->
+        <h1>Form Structure</h1>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                placeholder="Enter your password" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- describe what is placeholder,type,value, required in form input fields. -->
+        <h1>Form Input Field Attributes</h1>
+
+        <p><strong>Placeholder:</strong> A placeholder is a short hint or
+            description that appears inside an input field when it is empty. It
+            provides guidance to the user about what type of information is
+            expected in that field.</p>
+
+        <p><strong>Type:</strong> The type attribute specifies the type of input
+            field. It determines the kind of data that can be entered into the
+            field, such as text, email, password, number, etc.</p>
+
+        <p><strong>Value:</strong> The value attribute specifies the initial
+            value of the input field. It can be used to pre-fill the field with
+            a default value or to set a specific value that will be submitted
+            with the form.</p>
+
+        <p><strong>Required:</strong> The required attribute is a boolean
+            attribute that indicates whether the input field must be filled out
+            before submitting the form. If an input field has the required
+            attribute, the user will not be able to submit the form without
+            providing a value for that field.</p>
+
+        <h1>Example of Input Types</h1>
+        <p><strong>Password:</strong> Used for entering passwords. The input is
+            masked.</p>
+        <p><strong>Email:</strong> Used for entering email addresses. Validates
+            the format.</p>
+        <p><strong>Number:</strong> Used for entering numeric values.</p>
+        <p><strong>Date:</strong> Used for selecting a date.</p>
+        <p><strong>Radio:</strong> Used for selecting one option from a
+            group.</p>
+
+        <p><strong>Checkbox:</strong> Used for selecting one or more options
+            from a group.</p>
+        <p><strong>File:</strong> Used for uploading files.</p>
+
+        <p><strong>Submit:</strong> Used for submitting the form data to the
+            server.</p>
+        <p><strong>Reset:</strong> Used for resetting the form fields to their
+            default
+            values.</p>
+
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+        <input type="email" placeholder="Enter your email">
+        <br><br>
+        <input type="password" placeholder="Enter your password">
+        <br><br>
+        <input type="number" placeholder="Enter your age">
+        <br><br>
+        <input type="date">
+        <br><br>
+
+        <h3>choose your gender</h3>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+
+        <h3>choose your interests</h3>
+        <input type="checkbox" name="interests" value="sports"> Sports
+        <input type="checkbox" name="interests" value="music"> Music
+        <input type="checkbox" name="interests" value="travel"> Travel
+
+        <input type="file">
+        <br><br>
+        <input type="submit">
+        <br><br>
+        <input type="reset">
+        <br><br>
+
+        <!-- this is textarea -->
+        <h3>Write your message</h3>
+        <textarea rows="5" cols="30"></textarea>
+
+        <!-- select dropdown -->
+        <h3>Choose your country</h3>
+        <select>
+            <option>India</option>
+            <option>Japan</option>
+            <option>USA</option>
+        </select>
+
+    </body>
+</html>
